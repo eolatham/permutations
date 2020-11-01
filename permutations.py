@@ -26,4 +26,7 @@ if __name__ == "__main__":
     for s in ["", "a", "ab", "abc", "abcd"]:
         result = perms(s)
         correct = result == set("".join(x) for x in permutations(s))
-        print(f'perms("{s}") = {result}\ncorrect: {correct}', end="\n\n")
+        print(
+            f'perms("{s}") = {result}\nlength: {len(result)}\ncorrect: {correct}',
+            end="\n\n",
+        )
