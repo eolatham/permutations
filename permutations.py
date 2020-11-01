@@ -14,8 +14,6 @@ def perms(s: str) -> Set[str]:
     n = len(s)
     if n < 2:
         return {s}
-    elif n == 2:
-        return {s, s[::-1]}
     else:
         output = set()
         for i in range(n):
