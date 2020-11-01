@@ -1,5 +1,7 @@
 # Permutations
 
+This repo holds my solution to the problem of generating string permutations in Python using purely built-in syntax.
+
 ## Brainstorming Process
 
 ### [brainstorm.py](brainstorm.py)
