@@ -1,13 +1,26 @@
 # Permutations
 
-This repo holds my solution to the problem of generating string permutations in Python using purely built-in syntax.
+This repo holds my solution to the problem of generating string permutations in Python without the help of the [itertools](https://docs.python.org/3/library/itertools.html) library.
+
+The goal is to take a string as input and output a set of permutations equivalent to the following:
+
+```python
+from typing import Set
+from itertools import permutations
+
+def perms(s: str) -> Set[str]:
+  return set("".join(x) for x in permutations(s))
+```
+
+Note that the above code is included [here](common.py).
 
 ## Brainstorming Process
 
 ### [brainstorm.py](brainstorm.py)
 
-1. I started by solving the simplest non-trivial case (`n=2`).
-2. I kept stepping up (by incrementing `n`) until the pattern became clear.
+0. Solve the trivial case (`n<2`).
+1. Solving the simplest non-trivial case (`n=2`).
+2. Keep stepping up (by incrementing `n`) until the pattern becomes clear.
 
 In this exercise, I discovered that the [natural solution](#General-Solution) is recursive.
 

@@ -3,7 +3,7 @@ from typing import Set
 from itertools import permutations
 
 # LOCAL
-from common import str_del
+from common import control, str_del
 
 
 def perms(s: str) -> Set[str]:
@@ -25,8 +25,8 @@ def perms(s: str) -> Set[str]:
 if __name__ == "__main__":
     for s in ["", "a", "ab", "abc", "abcd"]:
         result = perms(s)
-        correct = result == set("".join(x) for x in permutations(s))
         print(
-            f'perms("{s}") = {result}\nlength: {len(result)}\ncorrect: {correct}',
-            end="\n\n",
+            f"perms('{s}') = {result}\n"
+            f"length: {len(result)}\n"
+            f"correct: {result == control(s)}\n",
         )

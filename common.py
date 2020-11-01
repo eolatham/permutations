@@ -1,3 +1,12 @@
+# STL
+from typing import Set
+from itertools import permutations
+
+
+def control(s: str) -> Set[str]:
+    return set("".join(x) for x in permutations(s))
+
+
 def str_del(s: str, i: int, n: int) -> str:
     """
     Return a copy of the string s of length n
