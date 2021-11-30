@@ -1,5 +1,13 @@
 # Permutations
 
+#### Author: Eric Latham
+
+#### Email: ericoliverlatham@gmail.com
+
+---
+
+## Description
+
 This repo holds my solution to the problem of generating string permutations in Python without the help of the [itertools](https://docs.python.org/3/library/itertools.html) library.
 
 The goal is to take a string as input and output a set of permutations equivalent to the following:
