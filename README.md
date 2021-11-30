@@ -1,10 +1,8 @@
 # Permutations
 
-#### Author: Eric Latham
+Author: Eric Latham
 
-#### Email: ericoliverlatham@gmail.com
-
----
+Email: ericoliverlatham@gmail.com
 
 ## Description
 
